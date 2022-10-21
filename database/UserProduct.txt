@@ -1,9 +1,7 @@
-t:Beef
-t:Tomato
+tutu:Beef
+tutu:Tomato
 mimi:Beef
 mimi:Onion
-p:Beef
-p:Tomato
-p:Onion
-tom:Beef
-Jerry:Beef
+pepe:Beef
+pepe:Tomato
+pepe:Onion
