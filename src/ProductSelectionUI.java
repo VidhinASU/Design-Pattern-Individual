@@ -8,7 +8,7 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JRadioButton;
 
-public class SelectProductUI extends JDialog{
+public class ProductSelectionUI extends JDialog{
 	
 	/**
 	 * 
@@ -24,7 +24,7 @@ public class SelectProductUI extends JDialog{
 	private ButtonGroup buttonGroup1 = new ButtonGroup();
 	private JButton buttonLogout = new JButton();
 	
-	public SelectProductUI() {
+	public ProductSelectionUI() {
 		try {
 			this.getContentPane().setLayout(null);
 			productNameCombo.setBounds(new Rectangle(155, 41, 203, 22));

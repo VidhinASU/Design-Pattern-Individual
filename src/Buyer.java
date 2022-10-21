@@ -1,3 +1,4 @@
+//Bridge Design Pattern, Factory Design Pattern
 public class Buyer extends Person {
 	
 	public Buyer() {}

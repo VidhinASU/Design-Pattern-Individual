@@ -1,3 +1,4 @@
+//Bridge Design Pattern, Factory Design Pattern
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.util.Date;

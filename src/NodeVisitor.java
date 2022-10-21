@@ -1,3 +1,4 @@
+// Visitor Design Pattern
 public abstract class NodeVisitor {
 
 	public abstract void visitProduct(Product product);

@@ -1,3 +1,4 @@
+// Iterator Method
 public class ProductIterator implements ListIterator {
 
 	private ClassProductList classProductList;

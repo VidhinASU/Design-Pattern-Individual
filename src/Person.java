@@ -1,3 +1,4 @@
+//Bridge Design Pattern, Factory Design Pattern
 public abstract class Person {
 	
 	String userName;

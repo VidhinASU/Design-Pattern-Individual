@@ -1,4 +1,5 @@
-public class Seller extends Person {
+//Bridge Design Pattern, Factory Design Pattern
+class Seller extends Person {
 
 	public Seller() {}
 

@@ -1,3 +1,5 @@
+//Facade design pattern
+
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.io.BufferedReader;
@@ -187,7 +189,7 @@ public class Facade {
 	}
 
 	public boolean SelectProduct() {
-		SelectProductUI productUI = new SelectProductUI();
+		ProductSelectionUI productUI = new ProductSelectionUI();
 		theSelectedProduct = productUI.getSelectedProduct(thePerson.productList);
 		thePerson.currentProduct = theSelectedProduct;
 		nProductCategory = productUI.productCategory;

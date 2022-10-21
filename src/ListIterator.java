@@ -1,3 +1,4 @@
+// Iterator Method
 public interface ListIterator {
 
 	public abstract boolean hasNext();
