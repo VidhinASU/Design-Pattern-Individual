@@ -1,0 +1,9 @@
+t:Beef
+t:Tomato
+mimi:Beef
+mimi:Onion
+p:Beef
+p:Tomato
+p:Onion
+tom:Beef
+Jerry:Beef

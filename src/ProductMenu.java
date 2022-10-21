@@ -1,8 +1,61 @@
-public interface ProductMenu {
+import java.awt.event.ActionEvent;
 
-//	private Person person;
+import javax.swing.JComboBox;
+import javax.swing.JDialog;
 
-	public abstract void showMenu();
+public abstract class ProductMenu extends JDialog {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	Product product;
+	protected boolean isLoggedOut = true;
+	
+	JComboBox<Trading> tradingCombox = new JComboBox<>();
+	public ProductMenu() {
+		try {
+	    }
+	    catch(Exception e)
+	    {
+	    	e.printStackTrace();
+	    }
+	    setModal(true);
+	    setSize(503,294);
+	}
+	
+	void TradingAddButton_actionPerformed() {
+		refresh();
+	}
+	void TradingViewButton_actionPerformed() {
+		Trading theAss=(Trading)tradingCombox.getSelectedItem() ;
+		PTBS.mainFacade.viewTrading(theAss);
+	}
+	void refresh() {
+		tradingCombox.removeAllItems() ;
+	    for (Trading assignment : product.tradingList) {
+	      tradingCombox.addItem(assignment);
+	    }
+	}
+
+	@SuppressWarnings("unused")
+	private void buttonChangeProduct_actionPerformed(ActionEvent e) {
+		isLoggedOut=false;
+	    dispose();
+	}
+
+	@SuppressWarnings("unused")
+	private void buttonLogout_actionPerformed(ActionEvent e) {
+		isLoggedOut=true;
+	    dispose();
+	}
+	boolean isLoggedOut() {
+		return isLoggedOut;
+	}
+	
+
+
+	public abstract boolean showMenu();
 
 	public abstract void showAddButton();
 
@@ -13,5 +66,7 @@ public interface ProductMenu {
 	public abstract void showLabels();
 
 	public abstract void showComboxes();
+
+	protected abstract void setProductMenu(ProductMenu theProductMenu);
 
 }

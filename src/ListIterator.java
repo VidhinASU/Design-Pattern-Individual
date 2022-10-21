@@ -6,6 +6,5 @@ public interface ListIterator {
 
 	public abstract void MoveToHead();
 
-	public abstract void Remove();
-
+	public abstract void Remove(int i);
 }
